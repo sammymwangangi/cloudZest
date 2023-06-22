@@ -1,9 +1,108 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import Link from "next/link";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 import LogoVPN from "../../public/assets/Logo.svg";
+import { Popover, Transition } from "@headlessui/react";
+import {
+  ChevronDownIcon,
+  PhoneIcon,
+  PlayCircleIcon,
+} from "@heroicons/react/20/solid";
+
+import {
+  ArrowPathIcon,
+  ChartPieIcon,
+  CursorArrowRaysIcon,
+  FingerPrintIcon,
+  SquaresPlusIcon,
+  CloudIcon,
+  DevicePhoneMobileIcon,
+  CodeBracketSquareIcon,
+  EyeDropperIcon,
+  ServerStackIcon,
+  PresentationChartLineIcon,
+  GlobeAltIcon,
+  WrenchScrewdriverIcon,
+} from "@heroicons/react/24/outline";
+
+const solutions = [
+  {
+    name: "Cloud Computing",
+    description: "Get a better understanding of your traffic",
+    href: "#",
+    icon: CloudIcon,
+  },
+  {
+    name: "Digital Marketing",
+    description: "Speak directly to your customers",
+    href: "#",
+    icon: CursorArrowRaysIcon,
+  },
+  {
+    name: "ICT Consultancy & Infrastructure",
+    description: "Your customers' data will be safe and secure",
+    href: "#",
+    icon: FingerPrintIcon,
+  },
+  {
+    name: "Software Development",
+    description: "Connect with third-party tools",
+    href: "#",
+    icon: SquaresPlusIcon,
+  },
+  {
+    name: "Mobile App Development",
+    description: "Build strategic funnels that will convert",
+    href: "#",
+    icon: DevicePhoneMobileIcon,
+  },
+  {
+    name: "Websites & Web App Development",
+    description: "Build strategic funnels that will convert",
+    href: "#",
+    icon: CodeBracketSquareIcon,
+  },
+  {
+    name: "UI/UX Design",
+    description: "Build strategic funnels that will convert",
+    href: "#",
+    icon: EyeDropperIcon,
+  },
+  {
+    name: "Network",
+    description: "Build strategic funnels that will convert",
+    href: "#",
+    icon: ServerStackIcon,
+  },
+  {
+    name: "Data Analysis",
+    description: "Build strategic funnels that will convert",
+    href: "#",
+    icon: ChartPieIcon,
+  },
+  {
+    name: "Industrial Training",
+    description: "Build strategic funnels that will convert",
+    href: "#",
+    icon: PresentationChartLineIcon,
+  },
+];
+const products = [
+  {
+    name: "Domain Name & Hosting",
+    description: "Get a better understanding of your traffic",
+    href: "#",
+    icon: GlobeAltIcon,
+  },
+  {
+    name: "ICT Equipment Supplies",
+    description: "Speak directly to your customers",
+    href: "#",
+    icon: WrenchScrewdriverIcon,
+  },
+];
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -23,7 +122,7 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
-            <LogoVPN className="h-8 w-auto" />
+            <div className="text-2xl font-medium text-black">CloudZest</div>
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll
@@ -44,24 +143,110 @@ const Header = () => {
             >
               About
             </LinkScroll>
-            <LinkScroll
-              activeClass="active"
-              to="feature"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("feature");
-              }}
-              className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                (activeLink === "feature"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
-              }
-            >
-              Feature
-            </LinkScroll>
+            <Popover className="relative">
+              <Popover.Button
+                className={
+                  "px-4 py-2 mx-2 inline-flex items-center gap-x-1 animation-hover relative focus:outline-none" +
+                  (activeLink === "pricing"
+                    ? " text-orange-500 animation-active "
+                    : " text-black-500 hover:text-orange-500 ")
+                }
+              >
+                <span>Services & Solutions</span>
+                <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
+              </Popover.Button>
+
+              <Transition
+                as={Fragment}
+                enter="transition ease-out duration-200"
+                enterFrom="opacity-0 translate-y-1"
+                enterTo="opacity-100 translate-y-0"
+                leave="transition ease-in duration-150"
+                leaveFrom="opacity-100 translate-y-0"
+                leaveTo="opacity-0 translate-y-1"
+              >
+                <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
+                  <div className="w-screen max-w-md flex-auto overflow-hidden bg-white-500 rounded-3xl text-sm leading-6 shadow-lg">
+                    <div className="p-4">
+                      {solutions.map((item) => (
+                        <div
+                          key={item.name}
+                          className="group relative flex gap-x-4 items-center rounded-lg px-1 hover:bg-gray-50"
+                        >
+                          <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                            <item.icon
+                              className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                              aria-hidden="true"
+                            />
+                          </div>
+                          <div>
+                            <a
+                              href={item.href}
+                              className="font-semibold text-gray-900"
+                            >
+                              {item.name}
+                              <span className="absolute inset-0" />
+                            </a>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </Popover.Panel>
+              </Transition>
+            </Popover>
+            <Popover className="relative">
+              <Popover.Button
+                className={
+                  "px-4 py-2 mx-2 inline-flex items-center gap-x-1 animation-hover relative focus:outline-none" +
+                  (activeLink === "pricing"
+                    ? " text-orange-500 animation-active "
+                    : " text-black-500 hover:text-orange-500 ")
+                }
+              >
+                <span>Products</span>
+                <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
+              </Popover.Button>
+
+              <Transition
+                as={Fragment}
+                enter="transition ease-out duration-200"
+                enterFrom="opacity-0 translate-y-1"
+                enterTo="opacity-100 translate-y-0"
+                leave="transition ease-in duration-150"
+                leaveFrom="opacity-100 translate-y-0"
+                leaveTo="opacity-0 translate-y-1"
+              >
+                <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
+                  <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white-500 text-sm leading-6 shadow-lg">
+                    <div className="p-4">
+                      {products.map((item) => (
+                        <div
+                          key={item.name}
+                          className="group relative flex gap-x-4 items-center rounded-lg px-1 hover:bg-gray-50"
+                        >
+                          <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                            <item.icon
+                              className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                              aria-hidden="true"
+                            />
+                          </div>
+                          <div>
+                            <a
+                              href={item.href}
+                              className="font-semibold text-gray-900"
+                            >
+                              {item.name}
+                              <span className="absolute inset-0" />
+                            </a>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </Popover.Panel>
+              </Transition>
+            </Popover>
             <LinkScroll
               activeClass="active"
               to="pricing"
@@ -78,7 +263,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Pricing
+              Blog
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -96,16 +281,11 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Testimonial
+              Contact Us
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <Link href="/">
-              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
-                  Sign In
-              </a>
-            </Link>
-            <ButtonOutline>Sign Up</ButtonOutline>
+            <ButtonOutline>Get Quote</ButtonOutline>
           </div>
         </nav>
       </header>

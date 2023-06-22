@@ -37,13 +37,12 @@ const Hero = ({
             variants={scrollAnimation}>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-                Want anything to be easy with <strong>LaslesVPN</strong>.
+              Supercharge your business with Automated Marketing.
               </h1>
               <p className="text-black-500 mt-4 mb-6">
-                Provide a network for all your needs with ease and fun using
-                LaslesVPN discover interesting features from us.
+              Trusted by 700+ businesses globally, CloudZest stands as the leading advertising and marketing agency in Kenya, preferred by businesses seeking exceptional services.
               </p>
-              <ButtonPrimary>Get Started</ButtonPrimary>
+              <ButtonPrimary>Get Quote</ButtonPrimary>
             </div>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>
