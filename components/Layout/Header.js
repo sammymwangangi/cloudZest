@@ -31,7 +31,7 @@ const solutions = [
   {
     name: "Cloud Computing",
     description: "Get a better understanding of your traffic",
-    href: "#",
+    href: "/cloud-computing",
     icon: CloudIcon,
   },
   {
