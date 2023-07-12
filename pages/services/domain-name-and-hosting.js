@@ -1,30 +1,33 @@
 import React, { useMemo } from "react";
 import Image from "next/image";
-import ButtonPrimary from "../components/misc/ButtonPrimary";
+import ButtonPrimary from "../../components/misc/ButtonPrimary";
 import { motion } from "framer-motion";
-import getScrollAnimation from "../utils/getScrollAnimation";
-import ScrollAnimationWrapper from "../components/Layout/ScrollAnimationWrapper";
-import Hero from "../components/Hero";
-import Layout from "../components/Layout/Layout";
-import SeoHead from "../components/SeoHead";
+import getScrollAnimation from "../../utils/getScrollAnimation";
+import ScrollAnimationWrapper from "../../components/Layout/ScrollAnimationWrapper";
+import Hero from "../../components/Hero";
+import Layout from "../../components/Layout/Layout";
+import SeoHead from "../../components/SeoHead";
 
 export default function Home() {
   return (
     <>
-      <SeoHead title="Cloud Computing" />
+      <SeoHead title="Domain Name and Hosting" />
       <Layout>
         <div className="max-w-screen-xl mt-2 px-8 xl:px-16 mx-auto" id="about">
           <ScrollAnimationWrapper>
             <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16">
               <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
                 <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-                  Cloud Computing.
+                  Domain Name and Hosting.
                 </h1>
                 <p className="text-black-500 mt-4 mb-6">
-                  Revolutionize your business with cloud computing. Access
-                  scalable, flexible, and cost-efficient solutions for
-                  streamlined operations and accelerated growth. Experience the
-                  cloud advantage today.
+                  Your Digital Identity Starts Here Establish your online
+                  presence with our domain name and hosting services. We assist
+                  you in securing the perfect domain name for your business and
+                  provide reliable hosting solutions to ensure your website is
+                  always accessible and secure. Trust us to handle the technical
+                  aspects while you focus on building your brand and engaging
+                  with your audience.
                 </p>
                 <ButtonPrimary>Get Quote</ButtonPrimary>
               </div>

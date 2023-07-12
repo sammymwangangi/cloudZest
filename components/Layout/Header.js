@@ -31,75 +31,69 @@ const solutions = [
   {
     name: "Cloud Computing",
     description: "Get a better understanding of your traffic",
-    href: "/cloud-computing",
+    href: "/services/cloud-computing",
     icon: CloudIcon,
   },
   {
     name: "Digital Marketing",
     description: "Speak directly to your customers",
-    href: "#",
+    href: "/services/digital-marketing",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "ICT Consultancy & Infrastructure",
     description: "Your customers' data will be safe and secure",
-    href: "#",
+    href: "/services/ict-consultancy-and-infrastructure",
     icon: FingerPrintIcon,
   },
   {
     name: "Software Development",
     description: "Connect with third-party tools",
-    href: "#",
+    href: "/services/software-development",
     icon: SquaresPlusIcon,
   },
   {
     name: "Mobile App Development",
     description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/services/mobile-app-development",
     icon: DevicePhoneMobileIcon,
   },
   {
     name: "Websites & Web App Development",
     description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/services/websites-and-web-app-development",
     icon: CodeBracketSquareIcon,
   },
   {
     name: "UI/UX Design",
     description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/services/ui-ux-design",
     icon: EyeDropperIcon,
   },
   {
     name: "Network",
     description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/services/network-services",
     icon: ServerStackIcon,
   },
   {
     name: "Data Analysis",
     description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/services/data-analysis",
     icon: ChartPieIcon,
-  },
-  {
-    name: "Industrial Training",
-    description: "Build strategic funnels that will convert",
-    href: "#",
-    icon: PresentationChartLineIcon,
   },
 ];
 const products = [
   {
     name: "Domain Name & Hosting",
     description: "Get a better understanding of your traffic",
-    href: "#",
+    href: "/services/domain-name-and-hosting",
     icon: GlobeAltIcon,
   },
   {
     name: "ICT Equipment Supplies",
     description: "Speak directly to your customers",
-    href: "#",
+    href: "/services/ict-equipment-supplies",
     icon: WrenchScrewdriverIcon,
   },
 ];
@@ -168,13 +162,12 @@ const Header = () => {
                             />
                           </div>
                           <div>
-                            <a
+                            <Link
                               href={item.href}
                               className="font-semibold text-gray-900"
                             >
                               {item.name}
-                              <span className="absolute inset-0" />
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       ))}
