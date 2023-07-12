@@ -8,13 +8,13 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 const Hero = ({
   listUser = [
     {
-      name: "Users",
-      number: "390",
+      name: "Clients",
+      number: "10",
       icon: "/assets/Icon/heroicons_sm-user.svg",
     },
     {
-      name: "Locations",
-      number: "20",
+      name: "Projects",
+      number: "50",
       icon: "/assets/Icon/gridicons_location.svg",
     },
     {
@@ -37,10 +37,10 @@ const Hero = ({
             variants={scrollAnimation}>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-              Supercharge your business with Automated Marketing.
+              Your One-Stop Solution for Cutting-Edge Technology Services
               </h1>
               <p className="text-black-500 mt-4 mb-6">
-              Trusted by 700+ businesses globally, CloudZest stands as the leading advertising and marketing agency in Kenya, preferred by businesses seeking exceptional services.
+              Partner with us to accelerate your digital transformation, enhance your online presence, and unlock the full potential of technology for your business. Let us be your trusted partner on the path to success.
               </p>
               <ButtonPrimary>Get Quote</ButtonPrimary>
             </div>

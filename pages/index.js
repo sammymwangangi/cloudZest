@@ -3,16 +3,45 @@ import Pricing from "../components/Pricing";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
+import About from "../components/About";
+import { supabase } from "./../lib/supabaseClient";
+import Link from "next/link";
 
-export default function Home() {
+
+const stats = [
+  { label: "Founded", value: "2023" },
+  { label: "Clients", value: "10" },
+  { label: "Countries", value: "2" },
+  { label: "Projects", value: "50" },
+];
+
+export default function Home({services}) {
   return (
     <>
-      <SeoHead title='CloudZest' />
+      <SeoHead title="CloudZest" />
       <Layout>
         <Hero />
-        <Feature />
-        <Pricing />
+        <About/>
+        {services.map((service) => (
+          <div key={service.id}>
+            <h1 className="text-red-600">{service.name}</h1>
+            <p>{service.description}</p>
+          </div>
+        ))}
+
+        
       </Layout>
     </>
   );
 }
+
+export async function getServerSideProps() {
+  let { data } = await supabase.from("services").select();
+
+  return {
+    props: {
+      services: data,
+    },
+  };
+}
+
