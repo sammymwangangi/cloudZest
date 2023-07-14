@@ -5,6 +5,8 @@ import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
 import About from "../components/About";
 import Computing from "../components/Computing";
+import DigitalMarketing from "../components/DigitalMarketing";
+import Ict from "../components/Ict";
 import { supabase } from "../lib/supabaseClient";
 import Link from "next/link";
 
@@ -23,6 +25,8 @@ export default function Home({ services }) {
         <Hero />
         <About />
         <Computing />
+        <DigitalMarketing/>
+        <Ict/>
         
         
       </Layout>

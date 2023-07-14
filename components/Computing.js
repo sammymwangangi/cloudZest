@@ -9,12 +9,13 @@ import ButtonPrimary from "./misc/ButtonPrimary";
 import Link from "next/link";
 import Image from "next/image";
 import Cloud from "../public/assets/cc.jpg";
+import Pattern1 from "../public/assets/pattern1.png";
 
 const Computing = () => {
   return (
     <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-20 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        {/* <svg
+        <svg
           className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
           aria-hidden="true"
         >
@@ -37,7 +38,8 @@ const Computing = () => {
             />
           </svg>
           <rect width="100%" height="100%" strokeWidth={0} fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
-        </svg> */}
+        </svg>
+        {/* <img src="assets/pattern1.png" alt="pattern" className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[108rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true" /> */}
       </div>
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10 items-center">
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 mt-20">

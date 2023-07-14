@@ -110,7 +110,7 @@ export default function Header() {
   return <>
     <header
       className={
-        "fixed top-0 w-full  z-30 bg-white-500 transition-all " +
+        "fixed top-0 w-full z-30 bg-[#fff] transition-all " +
         (scrollActive ? " shadow-md pt-0" : " pt-4")
       }
     >
