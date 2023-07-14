@@ -148,25 +148,25 @@ export default function Header() {
               leaveTo="opacity-0 translate-y-1"
             >
               <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
-                <div className="w-screen max-w-md flex-auto overflow-hidden bg-white-500 rounded-3xl text-sm leading-6 shadow-lg">
-                  <div className="p-4">
+                <div className="w-screen max-w-md flex-auto overflow-hidden bg-white rounded-3xl text-sm leading-6 shadow-lg">
+                  <div className="p-2">
                     {solutions.map((item) => (
-                      <div
+                      <Link href={item.href}
                         key={item.name}
-                        className="group relative flex gap-x-4 items-center rounded-lg px-1 hover:bg-gray-50"
+                        className="group relative flex gap-x-4 items-center rounded-lg px-1 py-1 hover:bg-gray-50"
                       >
-                        <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                           <item.icon
                             className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
                             aria-hidden="true"
                           />
                         </div>
                         <div>
-                          <Link href={item.href} className="font-semibold text-gray-900" legacyBehavior>
+                          <div className="group font-semibold text-gray-900">
                             {item.name}
-                          </Link>
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -196,14 +196,14 @@ export default function Header() {
               leaveTo="opacity-0 translate-y-1"
             >
               <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
-                <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white-500 text-sm leading-6 shadow-lg">
-                  <div className="p-4">
+                <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg">
+                  <div className="p-2">
                     {products.map((item) => (
                       <div
                         key={item.name}
-                        className="group relative flex gap-x-4 items-center rounded-lg px-1 hover:bg-gray-50"
+                        className="group relative flex gap-x-4 items-center rounded-lg px-1 py-1 hover:bg-gray-50"
                       >
-                        <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                           <item.icon
                             className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
                             aria-hidden="true"
