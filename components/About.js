@@ -1,11 +1,13 @@
+import Image from "next/image";
 import Link from "next/link";
+import Expert from "../public/assets/expert.jpg";
 
 const stats = [
-    { label: "Founded", value: "2023" },
-    { label: "Clients", value: "10" },
-    { label: "Countries", value: "2" },
-    { label: "Projects", value: "50" },
-  ];
+  { label: "Founded", value: "2023" },
+  { label: "Clients", value: "10" },
+  { label: "Countries", value: "2" },
+  { label: "Projects", value: "50" },
+];
 function About({ name, description }) {
   return (
     <div className="bg-white py-24 sm:py-32">
@@ -13,10 +15,12 @@ function About({ name, description }) {
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-4">
             <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
-              <img
+              <Image
                 className="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0"
-                src="https://images.unsplash.com/photo-1630569267625-157f8f9d1a7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2669&q=80"
-                alt=""
+                src={Expert}
+                width={512}
+                height={544}
+                alt="expert"
               />
               <div className="absolute inset-0 bg-gray-900 mix-blend-multiply" />
               <div
@@ -44,30 +48,25 @@ function About({ name, description }) {
                   />
                   <use href="#0ef284b8-28c2-426e-9442-8655d393522e" x={86} />
                 </svg>
-                <img
-                  src="https://tailwindui.com/img/logos/workcation-logo-white.svg"
-                  alt=""
-                  className="h-12 w-auto"
-                />
                 <blockquote className="mt-6 text-xl font-semibold leading-8 text-white">
                   <p>
-                    “Amet amet eget scelerisque tellus sit neque faucibus non
-                    eleifend. Integer eu praesent at a. Ornare arcu gravida
-                    natoque erat et cursus tortor.”
+                    “With our expertise, dedication, and commitment to
+                    excellence, we strive to be the partner you can rely on for
+                    all your technology requirements.”
                   </p>
                 </blockquote>
                 <figcaption className="mt-6 text-sm leading-6 text-gray-300">
                   <strong className="font-semibold text-white">
-                    Judith Rogers,
+                    Benson MAcharia,
                   </strong>{" "}
-                  CEO at Workcation
+                  CEO at CloudZest
                 </figcaption>
               </figure>
             </div>
           </div>
           <div>
             <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
-              <p className="text-base font-semibold leading-7 text-indigo-600">
+              <p className="text-base font-semibold leading-7 text-orange-600">
                 About CloudZest
               </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -92,7 +91,7 @@ function About({ name, description }) {
                 </p>
               </div>
             </div>
-            <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4">
+            <dl className="mt-10 mb-6 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4">
               {stats.map((stat, statIdx) => (
                 <div key={statIdx}>
                   <dt className="text-sm font-semibold leading-6 text-gray-600">
@@ -104,19 +103,17 @@ function About({ name, description }) {
                 </div>
               ))}
             </dl>
-            <div className="mt-10 flex">
-              <Link
-                href="/about"
-                className="text-base font-semibold leading-7 text-indigo-600"
-              >
-                Learn more about our company
-              </Link>
-            </div>
+            <Link
+              href="/about"
+              className="font-medium tracking-wide py-2 px-5 sm:px-8 border border-orange-500 text-orange-500 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-orange-500 hover:text-white transition-all hover:shadow-orange"
+            >
+              Learn more
+            </Link>
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default About;

@@ -37,7 +37,12 @@ const Computing = () => {
               strokeWidth={0}
             />
           </svg>
-          <rect width="100%" height="100%" strokeWidth={0} fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+          <rect
+            width="100%"
+            height="100%"
+            strokeWidth={0}
+            fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"
+          />
         </svg>
         {/* <img src="assets/pattern1.png" alt="pattern" className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[108rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true" /> */}
       </div>
@@ -55,9 +60,12 @@ const Computing = () => {
                 advantage today.
               </p>
             </div>
-            <div className="lg:pr-4 lg:pt-10">
-              <Link href="/services/cloud-computing" className="py-3 lg:py-4 px-12 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none">
-                Learn more
+            <div className="lg:pr-4 lg:pt-12">
+              <Link
+              href="/services/cloud-computing"
+              className="font-medium tracking-wide py-2 px-5 sm:px-8 border border-orange-500 text-orange-500 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-orange-500 hover:text-white transition-all hover:shadow-orange"
+            >
+              Learn more
             </Link>
             </div>
           </div>

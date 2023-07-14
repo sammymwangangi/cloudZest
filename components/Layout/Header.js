@@ -116,7 +116,7 @@ export default function Header() {
     >
       <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
         <div className="col-start-1 col-end-2 flex items-center">
-          <Link href="/" className="text-3xl font-medium text-red-600">CloudZest</Link>
+          <Link href="/" className="text-3xl font-medium text-orange-600">CloudZest</Link>
         </div>
         <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
           <Link
@@ -205,7 +205,7 @@ export default function Header() {
                       >
                         <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                           <item.icon
-                            className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                            className="h-6 w-6 text-gray-600 group-hover:text-orange-600"
                             aria-hidden="true"
                           />
                         </div>

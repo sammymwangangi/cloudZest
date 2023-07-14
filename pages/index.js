@@ -6,6 +6,8 @@ import SeoHead from "../components/SeoHead";
 import About from "../components/About";
 import Computing from "../components/Computing";
 import DigitalMarketing from "../components/DigitalMarketing";
+import SoftwareDevelopment from "../components/SoftwareDevelopment";
+import MobileApp from "../components/MobileApp";
 import Ict from "../components/Ict";
 import { supabase } from "../lib/supabaseClient";
 import Link from "next/link";
@@ -27,7 +29,8 @@ export default function Home({ services }) {
         <Computing />
         <DigitalMarketing/>
         <Ict/>
-        
+        <SoftwareDevelopment/>
+        {/* <MobileApp/> */}
         
       </Layout>
     </>
