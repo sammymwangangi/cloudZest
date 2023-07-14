@@ -98,7 +98,7 @@ const products = [
   },
 ];
 
-const Header = () => {
+export default function Header() {
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
   useEffect(() => {
@@ -106,6 +106,7 @@ const Header = () => {
       setScrollActive(window.scrollY > 20);
     });
   }, []);
+  
   return <>
     <header
       className={
@@ -405,5 +406,3 @@ const Header = () => {
     {/* End Mobile Navigation */}
   </>;
 };
-
-export default Header;

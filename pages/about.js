@@ -5,7 +5,7 @@ import SeoHead from "../components/SeoHead";
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <SeoHead title="Cloud Computing" />

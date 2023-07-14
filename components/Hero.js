@@ -5,25 +5,7 @@ import {motion} from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
-const Hero = ({
-  listUser = [
-    {
-      name: "Clients",
-      number: "10",
-      icon: "/assets/Icon/heroicons_sm-user.svg",
-    },
-    {
-      name: "Projects",
-      number: "50",
-      icon: "/assets/Icon/gridicons_location.svg",
-    },
-    {
-      name: "Server",
-      number: "50",
-      icon: "/assets/Icon/bx_bxs-server.svg",
-    },
-  ],
-}) => {
+export default function Hero() {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
@@ -61,5 +43,3 @@ const Hero = ({
     </div>
   );
 };
-
-export default Hero;
