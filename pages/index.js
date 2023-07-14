@@ -4,9 +4,9 @@ import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
 import About from "../components/About";
-import { supabase } from "./../lib/supabaseClient";
+import Computing from "../components/Computing";
+import { supabase } from "../lib/supabaseClient";
 import Link from "next/link";
-
 
 const stats = [
   { label: "Founded", value: "2023" },
@@ -15,20 +15,15 @@ const stats = [
   { label: "Projects", value: "50" },
 ];
 
-export default function Home({services}) {
+export default function Home({ services }) {
   return (
     <>
       <SeoHead title="CloudZest" />
       <Layout>
         <Hero />
-        <About/>
-        {services.map((service) => (
-          <div key={service.id}>
-            <h1 className="text-red-600">{service.name}</h1>
-            <p>{service.description}</p>
-          </div>
-        ))}
-
+        <About />
+        <Computing />
+        
         
       </Layout>
     </>
@@ -36,12 +31,11 @@ export default function Home({services}) {
 }
 
 export async function getServerSideProps() {
-  let { data } = await supabase.from("services").select();
+  const { data: services } = await supabase.from("services").select();
 
   return {
     props: {
-      services: data,
+      services,
     },
   };
 }
-

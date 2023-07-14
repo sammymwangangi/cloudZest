@@ -8,7 +8,7 @@ import Hero from "../../components/Hero";
 import Layout from "../../components/Layout/Layout";
 import SeoHead from "../../components/SeoHead";
 
-export default function Home() {
+export default function DataAnalysis() {
   return (
     <>
       <SeoHead title="Data Analysis" />
