@@ -1,12 +1,11 @@
 import { useId, useRef, useState } from 'react'
 import Image from 'next/image'
+import Link from "next/link"
 import clsx from 'clsx'
 import { motion, useMotionValue } from 'framer-motion'
 import { useInView } from "framer-motion"
 
 import { AppScreen } from '../components/AppScreen'
-import { AppStoreLink } from '../components/AppStoreLink'
-import { Button } from '../components/Button'
 import { Container } from '../components/Container'
 import { PhoneFrame } from '../components/PhoneFrame'
 
@@ -79,18 +78,6 @@ function BackgroundIllustration(props) {
   )
 }
 
-function PlayIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
-      <circle cx="12" cy="12" r="11.5" stroke="#D4D4D4" />
-      <path
-        d="M9.5 14.382V9.618a.5.5 0 0 1 .724-.447l4.764 2.382a.5.5 0 0 1 0 .894l-4.764 2.382a.5.5 0 0 1-.724-.447Z"
-        fill="#A3A3A3"
-        stroke="#A3A3A3"
-      />
-    </svg>
-  )
-}
 
 const prices = [
   997.56, 944.34, 972.25, 832.4, 888.76, 834.8, 805.56, 767.38, 861.21, 669.6,
@@ -118,7 +105,7 @@ function Chart({
   let id = useId()
   let svgRef = useRef(null)
   let pathRef = useRef()
-  let isInView = useInView(svgRef, { amount: 0.5, once: true })
+//   let isInView = useInView(svgRef, { amount: 0.5, once: true })
   let pathWidth = useMotionValue(0)
   let [interactionEnabled, setInteractionEnabled] = useState(false)
 
@@ -203,7 +190,6 @@ function Chart({
         strokeLinejoin="round"
         initial={{ pathLength: 0 }}
         transition={{ duration: 1 }}
-        {...(isInView ? { stroke: '#06b6d4', animate: { pathLength: 1 } } : {})}
         onUpdate={({ pathLength }) => {
           pathWidth.set(
             pathRef.current.getPointAtLength(
@@ -334,23 +320,20 @@ export default function MobileApp() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-              Invest at the perfect time.
+              Mobile App Development.
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-              By leveraging insights from our network of industry insiders,
-              you’ll know exactly when to buy to maximize profit, and exactly
-              when to sell to avoid painful losses.
+            Tap into the Mobile Revolution Capture the ever-growing mobile market with our cutting-edge mobile app development services.
             </p>
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
-              <AppStoreLink />
-              <Button
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                variant="outline"
-              >
-                <PlayIcon className="h-6 w-6 flex-none" />
-                <span className="ml-2.5">Watch the video</span>
-              </Button>
-            </div>
+            <p className="mt-6 mb-16 text-lg text-gray-600">
+            Our team of experienced developers creates intuitive, feature-rich, and visually appealing mobile applications for iOS and Android platforms
+            </p>
+            <Link
+              href="/services/mobile-app-development"
+              className="font-medium tracking-wide py-2 px-5 sm:px-8 border border-orange-500 text-orange-500 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-orange-500 hover:text-white transition-all hover:shadow-orange"
+            >
+              Learn more
+            </Link>
           </div>
           <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
             <BackgroundIllustration className="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />

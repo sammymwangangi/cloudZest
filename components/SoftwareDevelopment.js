@@ -1,12 +1,9 @@
-
-import { Container } from '../components/Container'
-import { FadeIn } from '../components/FadeIn'
-import { StylizedImage } from '../components/StylizedImage'
-import { TagList, TagListItem } from '../components/TagList'
-import imageWhiteboard from '../public/assets/laptop.jpg'
-import { GridList, GridListItem } from '../components/GridList'
-import { GridPattern } from '../components/GridPattern'
-import { SectionIntro } from '../components/SectionIntro'
+import { Container } from "../components/Container";
+import { FadeIn } from "../components/FadeIn";
+import { StylizedImage } from "../components/StylizedImage";
+import { TagList, TagListItem } from "../components/TagList";
+import imageWhiteboard from "../public/assets/laptop.jpg";
+import Link from "next/link";
 
 function Section({ title, image, children }) {
   return (
@@ -31,7 +28,7 @@ function Section({ title, image, children }) {
         </div>
       </div>
     </Container>
-  )
+  );
 }
 
 function Discover() {
@@ -39,20 +36,25 @@ function Discover() {
     <Section title="Software Development" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-            Tailored Solutions for Your Unique Needs Unlock your business's potential with custom software solutions designed specifically for your unique requirements.
+          Tailored Solutions for Your Unique Needs Unlock your business's
+          potential with custom software solutions designed specifically for
+          your unique requirements.
         </p>
         <p>
-        Our expert software development team delivers scalable, secure, and user-friendly applications that streamline processes, enhance productivity, and drive innovation.
+          Our expert software development team delivers scalable, secure, and
+          user-friendly applications that streamline processes, enhance
+          productivity, and drive innovation.
         </p>
         <p>
-        Whether it's web-based, mobile, or enterprise software, we have the expertise to bring your vision to life.
+          Whether it's web-based, mobile, or enterprise software, we have the
+          expertise to bring your vision to life.
         </p>
       </div>
 
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
         Included in this service
       </h3>
-      <TagList className="mt-4">
+      <TagList className="mt-4 mb-16">
         <TagListItem>CRM</TagListItem>
         <TagListItem>ERP</TagListItem>
         <TagListItem>CMS</TagListItem>
@@ -60,72 +62,23 @@ function Discover() {
         <TagListItem>Software Upgrade</TagListItem>
         <TagListItem>Software Maintenance</TagListItem>
       </TagList>
+
+      <Link
+        href="/services/software-development"
+        className="font-medium tracking-wide py-2 px-5 sm:px-8 border border-orange-500 text-orange-500 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-orange-500 hover:text-white transition-all hover:shadow-orange"
+      >
+        Learn more
+      </Link>
     </Section>
-  )
+  );
 }
 
-function Values() {
-    return (
-      <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
-        <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-[2.5rem] bg-gradient-to-b from-neutral-50">
-          <GridPattern
-            className="absolute inset-0 h-full w-full fill-neutral-100 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
-            yOffset={-270}
-          />
-        </div>
-  
-        <SectionIntro
-          eyebrow="Our values"
-          title="Balancing reliability and innovation"
-        >
-          <p>
-            We strive to stay at the forefront of emerging trends and
-            technologies, while completely ignoring them and forking that old
-            Rails project we feel comfortable using. We stand by our core values
-            to justify that decision.
-          </p>
-        </SectionIntro>
-  
-        <Container className="mt-24">
-          <GridList>
-            <GridListItem title="Meticulous">
-              The first part of any partnership is getting our designer to put
-              your logo in our template. The second step is getting them to do the
-              colors.
-            </GridListItem>
-            <GridListItem title="Efficient">
-              We pride ourselves on never missing a deadline which is easy because
-              most of the work was done years ago.
-            </GridListItem>
-            <GridListItem title="Adaptable">
-              Every business has unique needs and our greatest challenge is
-              shoe-horning those needs into something we already built.
-            </GridListItem>
-            <GridListItem title="Honest">
-              We are transparent about all of our processes, banking on the simple
-              fact our clients never actually read anything.
-            </GridListItem>
-            <GridListItem title="Loyal">
-              We foster long-term relationships with our clients that go beyond
-              just delivering a product, allowing us to invoice them for decades.
-            </GridListItem>
-            <GridListItem title="Innovative">
-              The technological landscape is always evolving and so are we. We are
-              constantly on the lookout for new open source projects to clone.
-            </GridListItem>
-          </GridList>
-        </Container>
-      </div>
-    )
-  }
-
-export default function Process() {
+export default function SoftwareDevelopment() {
   return (
     <>
-      <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
+      <div className="mt-10 space-y-24 [counter-reset:section] sm:mt-20 sm:space-y-32 lg:mt-10 lg:space-y-40">
         <Discover />
       </div>
-      <Values />
     </>
-  )
+  );
 }
