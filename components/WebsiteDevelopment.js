@@ -11,38 +11,38 @@ import Image from 'next/image';
   
   const features = [
     {
-      name: 'Push to deploy.',
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
+      name: 'eCommerce Platforms and Online Stores.',
+      description: 'We build and customize eCommerce platforms that scale to grow your online business.',
       icon: CloudArrowUpIcon,
     },
     {
-      name: 'SSL certificates.',
-      description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+      name: 'Custom Business Web Applications.',
+      description: 'We develop secure and scalable web apps optimized for your unique business processes.',
       icon: LockClosedIcon,
     },
     {
-      name: 'Simple queues.',
-      description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.',
+      name: 'CMS Implementation and Integration.',
+      description: 'We customize and integrate CMS platforms into your tech stack for easy content management.',
       icon: ArrowPathIcon,
     },
     {
-      name: 'Advanced security.',
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
+      name: 'API and Backend Development.',
+      description: 'We build robust APIs and cloud backends to power your apps and enable integration.',
       icon: FingerPrintIcon,
     },
     {
-      name: 'Powerful API.',
-      description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+      name: 'Blockchain Integration and Dapps.',
+      description: 'We integrate blockchain technology to enable new capabilities like smart contracts and dapps.',
       icon: Cog6ToothIcon,
     },
     {
-      name: 'Database backups.',
-      description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. ',
+      name: 'Chatbots and Virtual Assistants.',
+      description: 'We create smart chatbots and virtual assistants to automate customer interactions.',
       icon: ServerIcon,
     },
   ]
 
-  export default function Example() {
+  export default function WebsiteDevelopment() {
     return (
       <div className="bg-gray-900 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -56,8 +56,8 @@ import Image from 'next/image';
         </div>
         <div className="relative overflow-hidden pt-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <Image
-              src={Software}
+            <img
+              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
               alt="App screenshot"
               className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10"
               width={2432}
