@@ -101,13 +101,6 @@ const callsToAction = [
   { name: "Watch demo", href: "#", icon: PlayCircleIcon },
   { name: "Contact sales", href: "#", icon: PhoneIcon },
 ];
-const company = [
-  { name: "About us", href: "#" },
-  { name: "Careers", href: "#" },
-  { name: "Support", href: "#" },
-  { name: "Press", href: "#" },
-  { name: "Blog", href: "#" },
-];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -342,7 +335,7 @@ export default function Example() {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...solutions, ...callsToAction].map((item) => (
+                        {solutions.map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as="a"

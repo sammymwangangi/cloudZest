@@ -57,7 +57,7 @@ function About({ name, description }) {
                 </blockquote>
                 <figcaption className="mt-6 text-sm leading-6 text-gray-300">
                   <strong className="font-semibold text-white">
-                    Benson MAcharia,
+                    Benjamin Macharia,
                   </strong>{" "}
                   CEO at CloudZest
                 </figcaption>

@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <SeoHead title="Mobile App Development" />
       <Layout>
-        <div className="max-w-screen-xl mt-2 px-8 xl:px-16 mx-auto" id="about">
+        <div className="max-w-screen-xl mt-6 lg:mt-0 px-8 xl:px-16 mx-auto" id="about">
           <ScrollAnimationWrapper>
             <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16">
               <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
