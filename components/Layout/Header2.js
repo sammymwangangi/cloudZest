@@ -250,42 +250,18 @@ export default function Example() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <LinkScroll
-            activeClass="active"
-            to="pricing"
-            spy={true}
-            smooth={true}
-            duration={1000}
-            onSetActive={() => {
-              setActiveLink("pricing");
-            }}
-            className={
-              "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-              (activeLink === "pricing"
-                ? " text-orange-500 animation-active "
-                : " text-black-500 hover:text-orange-500 ")
-            }
+          <Link
+            href="/case-studies"
+            className="px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative"
           >
             Case Studies
-          </LinkScroll>
-          <LinkScroll
-            activeClass="active"
-            to="testimoni"
-            spy={true}
-            smooth={true}
-            duration={1000}
-            onSetActive={() => {
-              setActiveLink("testimoni");
-            }}
-            className={
-              "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-              (activeLink === "testimoni"
-                ? " text-orange-500 animation-active "
-                : " text-black-500 hover:text-orange-500 ")
-            }
+          </Link>
+          <Link
+            href="/contact-us"
+            className="px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative"
           >
             Contact Us
-          </LinkScroll>
+          </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <ButtonOutline>Get Quote</ButtonOutline>
