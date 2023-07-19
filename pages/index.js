@@ -7,6 +7,7 @@ import SoftwareDevelopment from "../components/SoftwareDevelopment";
 import WebsiteDevelopment from "../components/WebsiteDevelopment";
 import MobileApp from "../components/MobileApp";
 import Ict from "../components/Ict";
+import UiUx from "../components/UiUx";
 import { supabase } from "../lib/supabaseClient";
 import Link from "next/link";
 
@@ -29,6 +30,7 @@ export default function Home({ services }) {
         <SoftwareDevelopment/>
         <MobileApp/>
         <WebsiteDevelopment/>
+        <UiUx/>
         
       </Layout>
     </>
