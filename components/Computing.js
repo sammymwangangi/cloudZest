@@ -11,6 +11,7 @@ import Image from "next/image";
 import Cloud from "../public/assets/cc.jpg";
 import Pattern1 from "../public/assets/pattern1.png";
 
+
 const Computing = () => {
   return (
     <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-20 lg:overflow-visible lg:px-0">

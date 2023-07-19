@@ -7,13 +7,65 @@ import ScrollAnimationWrapper from "../../components/Layout/ScrollAnimationWrapp
 import Hero from "../../components/Hero";
 import Layout from "../../components/Layout/Layout";
 import SeoHead from "../../components/SeoHead";
+import CloudTestimony from "../../components/CloudTestimony";
+
+const features = [
+  {
+    name: "Cloud Infrastructure Services.",
+    description:
+      "Cloud Zest provides Infrastructure as a Service (IaaS), which offers businesses virtualized computing resources such as virtual machines, storage, and networks. We help businesses build their own IT infrastructure in the cloud, providing flexibility, scalability, and cost savings without the need for upfront hardware investments.",
+  },
+  {
+    name: "Cloud Application Development and Deployment.",
+    description:
+      "With our Platform as a Service (PaaS) offerings, Cloud Zest provides a development environment where businesses can build, test, and deploy applications effortlessly. We offer pre-configured development tools, databases, and runtime environments, allowing developers to focus on application development rather than infrastructure management.",
+  },
+  {
+    name: "Software as a Service (SaaS) Solutions.",
+    description:
+      "Cloud Zest offers a wide range of ready-to-use software applications over the internet through our Software as a Service (SaaS) offerings. Businesses can access applications such as customer relationship management (CRM) systems, project management tools, collaboration suites, and more on a subscription basis. SaaS solutions eliminate the need for installation, maintenance, and upfront software costs.",
+  },
+  {
+    name: "Cloud Migration and Integration.",
+    description:
+      "Cloud Zest assists businesses in migrating their existing infrastructure, applications, and data to the cloud. Our experts ensure a smooth transition, minimizing disruption to operations. We also provide integration services to connect cloud-based solutions with existing systems, enabling seamless data flow and process synchronization.",
+  },
+  {
+    name: "Cloud Security and Compliance.",
+    description:
+      "Data security is a top priority at Cloud Zest. We implement robust security measures, including encryption, regular backups, and disaster recovery strategies, to protect sensitive business information. Our team ensures compliance with industry regulations and helps businesses address security concerns in the cloud environment.",
+  },
+  {
+    name: "Cloud Monitoring and Performance Optimization.",
+    description:
+      "Cloud Zest offers monitoring and optimization services to ensure the optimal performance of cloud infrastructure. We monitor resource utilization, identify bottlenecks, and provide recommendations for optimizing performance and cost-efficiency. Continuous monitoring helps businesses proactively address issues and make informed decisions.",
+  },
+  {
+    name: "Cloud Consulting and Strategy.",
+    description:
+      "Our team of cloud experts provides consulting and strategic guidance to businesses, helping them develop cloud adoption strategies aligned with their specific goals and requirements. We assess the existing IT infrastructure, analyze business needs, and provide recommendations for leveraging cloud technologies to drive innovation, agility, and cost savings.",
+  },
+  {
+    name: "Cloud Backup and Disaster Recovery.",
+    description:
+      "Cloud Zest offers backup and disaster recovery services to protect businesses from data loss and ensure business continuity. We employ redundancy and multiple data centers to replicate and back up critical data, minimizing the impact of hardware failures, natural disasters, or other unforeseen events.",
+  },
+  {
+    name: "Cloud Training and Support.",
+    description:
+      "Cloud Zest provides training and support services to help businesses effectively utilize cloud computing resources. We offer training programs to educate employees on cloud technologies, best practices, and security measures. Our dedicated support team is available to address any technical queries or issues that may arise.",
+  },
+];
 
 export default function CloudComputing() {
   return (
     <>
       <SeoHead title="Cloud Computing" />
       <Layout>
-        <div className="max-w-screen-xl mt-6 lg:mt-0 px-8 xl:px-16 mx-auto" id="about">
+        <div
+          className="max-w-screen-xl mt-6 lg:mt-0 px-8 xl:px-16 mx-auto"
+          id="about"
+        >
           <ScrollAnimationWrapper>
             <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16">
               <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
@@ -43,6 +95,32 @@ export default function CloudComputing() {
             </div>
           </ScrollAnimationWrapper>
         </div>
+        <div className="bg-orange-50 py-24 sm:py-32">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:mx-0">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Experience the cloud advantage today
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                As a cloud computing service provider, Cloud Zest offers a
+                comprehensive range of services tailored to meet the specific
+                needs of businesses. Some of the key services we can offer to
+                businesses related to cloud computing include:
+              </p>
+            </div>
+            <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+              {features.map((feature) => (
+                <div key={feature.name}>
+                  <dt className="font-semibold text-gray-900">
+                    {feature.name}
+                  </dt>
+                  <dd className="mt-1 text-gray-600">{feature.description}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
+        <CloudTestimony/>
       </Layout>
     </>
   );

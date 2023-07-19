@@ -13,7 +13,6 @@ function Section({ title, image, children }) {
           <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
             <StylizedImage
               {...image}
-              sizes="(min-width: 1024px) 41rem, 31rem"
               className="justify-center lg:justify-end lg:group-even/section:justify-start"
             />
           </FadeIn>
@@ -58,9 +57,9 @@ function Discover() {
         <TagListItem>CRM</TagListItem>
         <TagListItem>ERP</TagListItem>
         <TagListItem>CMS</TagListItem>
-        <TagListItem>Inventory management</TagListItem>
-        <TagListItem>Software Upgrade</TagListItem>
-        <TagListItem>Software Maintenance</TagListItem>
+        <TagListItem>HRMS</TagListItem>
+        <TagListItem>Sacco Systems</TagListItem>
+        <TagListItem>POS systems</TagListItem>
       </TagList>
 
       <Link

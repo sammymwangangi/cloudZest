@@ -11,21 +11,21 @@ import {
 
 const features = [
   {
-    name: "Expert Guidance.",
+    name: "ICT Equipment Sales.",
     description:
-      "We provide expert guidance on optimizing your technology infrastructure and systems.",
+      "Cloud Zest provides a wide range of ICT equipment for businesses, including computers, laptops, servers, networking devices, storage solutions, and peripherals.",
     icon: CloudArrowUpIcon,
   },
   {
-    name: "Efficiency Gains.",
+    name: "ICT Equipment Installation and Configuration.",
     description:
-      "We identify opportunities to improve efficiency and productivity through technology enhancements.",
+      "Our team of experts ensures that the equipment is set up correctly, connected to the network, and configured to meet your specific requirements.",
     icon: LockClosedIcon,
   },
   {
-    name: "Future Proofing.",
+    name: "ICT Equipment Maintenance and Support.",
     description:
-      "We ensure your technology strategy aligns with and enables your business goals now and in future.",
+      "We offer proactive monitoring, regular maintenance, and troubleshooting to ensure that your equipment operates at peak performance.",
     icon: ServerIcon,
   },
 ];

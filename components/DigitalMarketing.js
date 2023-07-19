@@ -4,6 +4,7 @@ import Image from "next/image";
 import Ads from "../public/assets/ads.svg";
 import DigitalMarket from "../public/assets/digital-marketing.svg";
 
+
 export default function DigitalMarketing() {
   return (
     <div className="bg-white py-24 sm:py-32">

@@ -12,7 +12,7 @@ export default function About() {
     <>
       <SeoHead title="Cloud Computing" />
       <Layout>
-        <div className="bg-white px-6 py-10 sm:py-32 lg:px-8">
+        <div className="bg-white px-6 pt-10 sm:pt-32 lg:px-8">
           <nav
             className="flex items-center justify-center mb-5 mt-6 lg:mt-0"
             aria-label="Breadcrumb"

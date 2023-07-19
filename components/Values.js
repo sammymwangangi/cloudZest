@@ -34,10 +34,9 @@ function Section({ title, image, children }) {
   );
 }
 
-
 function OurValues() {
   return (
-    <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-4 lg:pt-20">
+    <div className="relative my-10 pt-24 sm:mt-32 sm:pt-32 lg:mt-4 lg:pt-20">
       <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-[2.5rem] bg-gradient-to-b from-neutral-50">
         <GridPattern
           className="absolute inset-0 h-full w-full fill-neutral-100 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
