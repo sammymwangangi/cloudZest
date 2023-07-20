@@ -82,7 +82,7 @@ export default function Ict() {
                   alt="Product screenshot"
                   width={912}
                   height={541}
-                  className="-mb-12 w-[57rem] max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
+                  className="-mb-12 w-[37rem] lg:w-[57rem] max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
                 />
               </div>
               <div

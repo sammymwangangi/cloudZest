@@ -57,11 +57,11 @@ export default function UiUx() {
             Learn more
           </Link>
           </div>
-          <div className="flex items-start justify-end lg:order-first">
+          <div className="flex items-start justify-center lg:justify-end lg:order-first">
             <Image
               src={UIUX}
               alt="Product screenshot"
-              className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+              className="w-[30rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
               width={2432}
               height={1442}
             />
