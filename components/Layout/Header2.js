@@ -131,7 +131,7 @@ export default function Example() {
       >
         <div className="flex lg:flex-1">
           <Link href="/">
-          <Image src={Logo} alt="logo" className="h-10 lg:h-30 w-auto" />
+          <Image src={Logo} alt="logo" className="h-16 lg:h-auto w-auto" />
           </Link>
         </div>
         <div className="flex lg:hidden">
