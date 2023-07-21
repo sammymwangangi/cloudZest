@@ -139,7 +139,7 @@ export default function Example() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
           <Link href="/" >
-          <Image src={Logo} alt="logo" className="h-auto w-auto" />
+          <Image src={Logo} alt="logo" className="h-10 lg:h-30 w-auto" />
           </Link>
             <p className="text-sm leading-6 text-gray-300">
               Making the world a better place through constructing elegant hierarchies.
