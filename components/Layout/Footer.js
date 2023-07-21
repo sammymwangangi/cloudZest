@@ -4,6 +4,7 @@ import Twitter from "../../public/assets/Icon/twitter.svg";
 import Instagram from "../../public/assets/Icon/instagram.svg";
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "../../public/assets/Logo.png";
 
 const navigation = {
   solutions: [
@@ -137,8 +138,8 @@ export default function Example() {
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-          <Link href="/" className="text-3xl font-medium text-orange-600">
-            CloudZest
+          <Link href="/" >
+          <Image src={Logo} alt="logo" className="h-auto w-auto" />
           </Link>
             <p className="text-sm leading-6 text-gray-300">
               Making the world a better place through constructing elegant hierarchies.

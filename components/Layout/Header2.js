@@ -1,9 +1,11 @@
 import { Fragment, useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import ButtonOutline from "../misc/ButtonOutline.";
+import Logo from "../../public/assets/Logo.png";
 import {
   ArrowPathIcon,
   ChartPieIcon,
@@ -128,8 +130,8 @@ export default function Example() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <Link href="/" className="text-3xl font-medium text-orange-600">
-            CloudZest
+          <Link href="/">
+          <Image src={Logo} alt="logo" className="h-auto w-auto" />
           </Link>
         </div>
         <div className="flex lg:hidden">
