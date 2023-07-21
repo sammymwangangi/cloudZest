@@ -122,11 +122,11 @@ export default function Example() {
     <header
       className={
         "fixed top-0 w-full z-30 bg-[#fff] transition-all " +
-        (scrollActive ? " shadow-md pt-0" : " pt-4")
+        (scrollActive ? " shadow-md pt-0" : " pt-2")
       }
     >
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1 lg:px-4 lg:py-4 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
