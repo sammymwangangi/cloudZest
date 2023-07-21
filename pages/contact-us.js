@@ -59,7 +59,7 @@ export default function ContactUs() {
                         </dt>
                         <dd>
                         <a className="hover:text-gray-900" href="tel:+254714798820">
-                            +254714798820
+                            +254725626388
                         </a>
                         </dd>
                     </div>
