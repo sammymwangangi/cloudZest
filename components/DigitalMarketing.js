@@ -14,10 +14,10 @@ export default function DigitalMarketing() {
             href="/services/digital-marketing"
             className="text-base font-semibold leading-7 text-indigo-600"
           >
-            Digital Marketing
+            Achieve your marketing goals
           </Link>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Achieve your marketing goals
+          Digital Marketing
           </p>
           <p className="mt-6 mb-6 text-lg leading-8 text-gray-600">
             Accelerate Your Online Presence Stand out in the digital landscape
