@@ -25,7 +25,6 @@ const features = [
     icon: ServerIcon,
   },
 ]
-
 export default function UiUx() {
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32">
@@ -33,8 +32,8 @@ export default function UiUx() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:ml-auto lg:pl-4 lg:pt-4">
             <div className="lg:max-w-lg mb-10">
-              <h2 className="text-base font-semibold leading-7 text-indigo-600">UI/UX Design</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Elevate your digital products with designs that leave a lasting impression.</p>
+              <h2 className="text-base font-semibold leading-7 text-indigo-600">Elevate your digital products with designs that leave a lasting impression.</h2>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">UI/UX Design</p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
               Our UI/UX design services focus on creating intuitive, visually appealing, and user-centric interfaces.
               </p>

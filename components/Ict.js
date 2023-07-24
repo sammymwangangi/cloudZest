@@ -38,10 +38,10 @@ export default function Ict() {
           <div className="px-6 lg:px-0 lg:pr-4 lg:pt-4">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-orange-600">
-                ICT Consultancy and Infrastructure
+              Expert guidance on optimizing your technology infrastructure
               </h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Expert guidance on optimizing your technology infrastructure
+                ICT Consultancy and Infrastructure
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 We Empower Your Digital Transformation Navigate the complex

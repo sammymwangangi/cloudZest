@@ -14,7 +14,8 @@ import Pattern1 from "../public/assets/pattern1.png";
 
 const Computing = () => {
   return (
-    <div className="relative isolate overflow-hidden bg-white px-6 py-0 sm:py-20 lg:overflow-visible lg:px-0">
+    <div className="relative isolate overflow-hidden bg-white px-6 py-4 sm:py-20 lg:overflow-visible lg:px-0">
+      
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <svg
           className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
@@ -47,6 +48,7 @@ const Computing = () => {
         </svg>
         {/* <img src="assets/pattern1.png" alt="pattern" className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[108rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true" /> */}
       </div>
+      <div className="absolute inset-0 text-4xl font-bold leading-8 text-gray-900 sm:text-4xl text-center py-4">Our Core Services</div>
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10 items-center">
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 mt-20">
           <div className="lg:pr-4">
@@ -71,7 +73,7 @@ const Computing = () => {
             </div>
           </div>
         </div>
-        <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+        <div className="-ml-12 -mt-0 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <Image
             className="w-[30rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
             src={Cloud}
