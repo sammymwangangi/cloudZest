@@ -77,7 +77,7 @@ export default function ContactUs() {
                     </dl>
                 </div>
                 </div>
-                <form action="#" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+                <form accept-charset="UTF-8" action="https://www.formbackend.com/f/b009be15d67ddf0d" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
                 <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                     <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
@@ -89,7 +89,7 @@ export default function ContactUs() {
                             type="text"
                             name="first-name"
                             id="first-name"
-                            autoComplete="given-name"
+                            autoComplete="first-name"
                             className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                         />
                         </div>
@@ -103,7 +103,7 @@ export default function ContactUs() {
                             type="text"
                             name="last-name"
                             id="last-name"
-                            autoComplete="family-name"
+                            autoComplete="last-name"
                             className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                         />
                         </div>
