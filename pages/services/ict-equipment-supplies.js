@@ -17,9 +17,9 @@ import clsx from "clsx";
 function OurValues() {
   return (
     <div className="relative mt-10 pt-24 sm:mt-32 sm:pt-32 lg:mt-4 lg:pt-20 pb-10">
-      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-[2.5rem] bg-gradient-to-b from-orange-50">
+      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-[2.5rem] bg-gradient-to-b from-red-50">
         <GridPattern
-          className="absolute inset-0 h-full w-full fill-orange-200 stroke-orange-950/5 [mask-image:linear-gradient(to_bottom_left,white_30%,transparent_50%)]"
+          className="absolute inset-0 h-full w-full fill-red-200 stroke-red-950/5 [mask-image:linear-gradient(to_bottom_left,white_30%,transparent_50%)]"
           yOffset={-270}
         />
       </div>
@@ -76,7 +76,7 @@ function CloudTestimony({ className }) {
       )}
     >
       <GridPattern
-        className="absolute inset-0 -z-10 h-full w-full fill-orange-50 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_50%,transparent_60%)]"
+        className="absolute inset-0 -z-10 h-full w-full fill-red-50 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_50%,transparent_60%)]"
         yOffset={-256}
       />
       <Container>
@@ -87,7 +87,7 @@ function CloudTestimony({ className }) {
                 
 At Cloud Zest, we understand the importance of reliable and efficient ICT equipment for businesses. We tailor our services to meet your specific requirements, providing high-quality equipment, expert installation, ongoing support, and sustainable solutions.
               </p>
-              <p className="text-2xl mt-4 text-orange-600">
+              <p className="text-2xl mt-4 text-[#F82409]">
               Partner with Cloud Zest for your ICT equipment supply needs, and let us provide you with top-notch equipment, reliable support, and seamless procurement processes, enabling your business to thrive with the right ICT infrastructure.
               </p>
             </blockquote>

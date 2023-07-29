@@ -66,7 +66,7 @@ const Computing = () => {
             <div className="lg:pr-4 pt-6 lg:pt-12">
               <Link
               href="/services/cloud-computing"
-              className="font-medium tracking-wide py-2 px-5 sm:px-8 border border-orange-500 text-orange-500 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-orange-500 hover:text-white transition-all hover:shadow-orange"
+              className="font-medium tracking-wide py-2 px-5 sm:px-8 cursor-pointer border border-[#F82409] text-[#F82409] bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-[#F82409] hover:text-white transition-all hover:shadow-orange"
             >
               Learn more
             </Link>

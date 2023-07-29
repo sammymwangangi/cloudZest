@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
             <ol role="list" className="flex items-center space-x-4">
               <li>
                 <div>
-                  <Link href="/" className="text-red-400 hover:text-gray-500">
+                  <Link href="/" className="text-[#FE0000] hover:text-gray-500">
                     Home
                   </Link>
                 </div>
@@ -62,7 +62,7 @@ export default function PrivacyPolicy() {
             <div className="pb-4">We may use cookies and similar tracking technologies to analyze website traffic, improve our services, and personalize your browsing experience. You can opt-out of cookie usage through your browser settings.</div>
 
             <div className="font-semibold">Your Rights:</div>
-            <div className="pb-4">You have the right to access, update, or delete your personal information. Please contact us at info@cloudzest.net or call 0725626388 to exercise these rights.</div>
+            <div className="pb-4">You have the right to access, update, or delete your personal information. Please contact us at <a className="text-[#FE0000]" href="mailto:info@cloudzest.net">info@cloudzest.net</a> or call <a className="text-[#FE0000]" href="tel:+254725626388">0725626388</a> to exercise these rights.</div>
 
             <div className="font-semibold">Updates to Privacy Policy:</div>
             <div className="pb-4">This Privacy Policy may be updated from time to time. We recommend reviewing this page periodically for any changes.</div>
@@ -71,7 +71,7 @@ export default function PrivacyPolicy() {
             <div className="pb-4">By using our website and services, you consent to our Privacy Policy and agree to the collection and use of your information as outlined herein.</div>
 
             <div className="font-semibold">Contact Us:</div>
-            <div className="pb-4">If you have any questions, concerns, or requests regarding our Privacy Policy or your personal information, please contact us at info@cloudzest.net or call 0725626388.</div>
+            <div className="pb-4">If you have any questions, concerns, or requests regarding our Privacy Policy or your personal information, please contact us at <a className="text-[#FE0000]" href="mailto:info@cloudzest.net">info@cloudzest.net</a> or call <a className="text-[#FE0000]" href="tel:+254725626388">0725626388</a>.</div>
 
             <div className="pb-4">By continuing to use our website and services, you signify your acceptance of this Privacy Policy. Thank you for choosing Cloud Zest as your technology partner.</div>
             </div>

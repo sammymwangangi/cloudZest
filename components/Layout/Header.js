@@ -116,7 +116,7 @@ export default function Header() {
     >
       <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
         <div className="col-start-1 col-end-2 flex items-center">
-          <Link href="/" className="text-3xl font-medium text-orange-600">CloudZest</Link>
+          <Link href="/" className="text-3xl font-medium text-[#F82409]">CloudZest</Link>
         </div>
         <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
           <Link
@@ -130,8 +130,8 @@ export default function Header() {
               className={
                 "px-4 py-2 mx-2 inline-flex items-center gap-x-1 animation-hover relative focus:outline-none" +
                 (activeLink === "pricing"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  ? " text-[#F82409] animation-active "
+                  : " text-black-500 hover:text-[#F82409] ")
               }
             >
               <span>Services & Solutions</span>
@@ -157,7 +157,7 @@ export default function Header() {
                       >
                         <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                           <item.icon
-                            className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                            className="h-6 w-6 text-gray-600 group-hover:text-[#F82409]"
                             aria-hidden="true"
                           />
                         </div>
@@ -178,8 +178,8 @@ export default function Header() {
               className={
                 "px-4 py-2 mx-2 inline-flex items-center gap-x-1 animation-hover relative focus:outline-none" +
                 (activeLink === "pricing"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  ? " text-[#F82409] animation-active "
+                  : " text-black-500 hover:text-[#F82409] ")
               }
             >
               <span>Products</span>
@@ -205,7 +205,7 @@ export default function Header() {
                       >
                         <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                           <item.icon
-                            className="h-6 w-6 text-gray-600 group-hover:text-orange-600"
+                            className="h-6 w-6 text-gray-600 group-hover:text-[#F82409]"
                             aria-hidden="true"
                           />
                         </div>
@@ -237,8 +237,8 @@ export default function Header() {
             className={
               "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
               (activeLink === "pricing"
-                ? " text-orange-500 animation-active "
-                : " text-black-500 hover:text-orange-500 ")
+                ? " text-[#F82409] animation-active "
+                : " text-black-500 hover:text-[#F82409] ")
             }
           >
             Blog
@@ -255,8 +255,8 @@ export default function Header() {
             className={
               "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
               (activeLink === "testimoni"
-                ? " text-orange-500 animation-active "
-                : " text-black-500 hover:text-orange-500 ")
+                ? " text-[#F82409] animation-active "
+                : " text-black-500 hover:text-[#F82409] ")
             }
           >
             Contact Us
@@ -284,7 +284,7 @@ export default function Header() {
             className={
               "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
               (activeLink === "about"
-                ? "  border-orange-500 text-orange-500"
+                ? "  border-[#F82409] text-[#F82409]"
                 : " border-transparent")
             }
           >
@@ -316,7 +316,7 @@ export default function Header() {
             className={
               "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
               (activeLink === "feature"
-                ? "  border-orange-500 text-orange-500"
+                ? "  border-[#F82409] text-[#F82409]"
                 : " border-transparent ")
             }
           >
@@ -348,7 +348,7 @@ export default function Header() {
             className={
               "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
               (activeLink === "pricing"
-                ? "  border-orange-500 text-orange-500"
+                ? "  border-[#F82409] text-[#F82409]"
                 : " border-transparent ")
             }
           >
@@ -380,7 +380,7 @@ export default function Header() {
             className={
               "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
               (activeLink === "testimoni"
-                ? "  border-orange-500 text-orange-500"
+                ? "  border-[#F82409] text-[#F82409]"
                 : " border-transparent ")
             }
           >

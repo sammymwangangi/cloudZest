@@ -154,7 +154,7 @@ export default function ContactUs() {
                     <div className="mt-8 flex justify-end">
                     <button
                         type="submit"
-                        className="font-medium tracking-wide py-2 px-5 sm:px-8 border border-orange-500 text-orange-500 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-orange-500 hover:text-white transition-all hover:shadow-orange"
+                        className="font-medium tracking-wide py-2 px-5 sm:px-8 border border-[#F82409] text-[#F82409] bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-[#F82409] hover:text-white transition-all hover:shadow-orange"
                     >
                         Send message
                     </button>

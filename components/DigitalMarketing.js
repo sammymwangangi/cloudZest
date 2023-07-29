@@ -34,8 +34,8 @@ export default function DigitalMarketing() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:ml-auto lg:pl-4 lg:pt-4">
             <div className="lg:max-w-lg mb-10">
-              <h2 className="text-base font-semibold leading-7 text-indigo-600">Achieve your marketing goals</h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Digital Marketing</p>
+              <h2 className="text-base font-semibold leading-7 text-[#F82409]">Achieve your marketing goals</h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
               Accelerate Your Online Presence Stand out in the digital landscape with our comprehensive digital marketing solutions.
               </p>
@@ -43,7 +43,7 @@ export default function DigitalMarketing() {
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
-                      <feature.icon className="absolute left-1 top-1 h-5 w-5 text-indigo-600" aria-hidden="true" />
+                      <feature.icon className="absolute left-1 top-1 h-5 w-5 text-[#F82409]" aria-hidden="true" />
                       {feature.name}
                     </dt>{' '}
                     <dd className="inline">{feature.description}</dd>
@@ -53,7 +53,7 @@ export default function DigitalMarketing() {
             </div>
             <Link
             href="/services/ui-ux-design"
-            className="font-medium tracking-wide py-2 px-5 sm:px-8 border border-orange-500 text-orange-500 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-orange-500 hover:text-white transition-all hover:shadow-orange"
+            className="font-medium tracking-wide py-2 px-5 sm:px-8 border border-[#F82409] text-[#F82409] bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-[#F82409] hover:text-white transition-all hover:shadow-orange"
           >
             Learn more
           </Link>

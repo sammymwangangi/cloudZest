@@ -18,9 +18,9 @@ import DigitalMarket from "../../public/assets/digital-marketing.svg";
 function OurValues() {
   return (
     <div className="relative mt-10 pt-24 sm:mt-32 sm:pt-32 lg:mt-4 lg:pt-20 pb-10">
-      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-[2.5rem] bg-gradient-to-b from-orange-50">
+      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-[2.5rem] bg-gradient-to-b from-red-50">
         <GridPattern
-          className="absolute inset-0 h-full w-full fill-orange-200 stroke-orange-950/5 [mask-image:linear-gradient(to_bottom_left,white_30%,transparent_50%)]"
+          className="absolute inset-0 h-full w-full fill-red-200 stroke-red-950/5 [mask-image:linear-gradient(to_bottom_left,white_30%,transparent_50%)]"
           yOffset={-270}
         />
       </div>
@@ -133,7 +133,7 @@ function CloudTestimony({ className }) {
                 industry trends, tools, and techniques to ensure that our
                 clients receive cutting-edge strategies and exceptional results.
               </p>
-              <p className="text-2xl mt-4 text-orange-600">
+              <p className="text-2xl mt-4 text-[#F82409]">
                 Partner with Cloud Zest to harness the power of digital
                 marketing and elevate your business's online presence and
                 growth.

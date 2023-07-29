@@ -18,9 +18,9 @@ import Expert from "../../public/assets/Illustration2.png";
 function OurValues() {
   return (
     <div className="relative mt-10 pt-24 sm:mt-32 sm:pt-32 lg:mt-4 lg:pt-20 pb-10">
-      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-[2.5rem] bg-gradient-to-b from-orange-50">
+      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-[2.5rem] bg-gradient-to-b from-red-50">
         <GridPattern
-          className="absolute inset-0 h-full w-full fill-orange-200 stroke-orange-950/5 [mask-image:linear-gradient(to_bottom_left,white_30%,transparent_50%)]"
+          className="absolute inset-0 h-full w-full fill-red-200 stroke-red-950/5 [mask-image:linear-gradient(to_bottom_left,white_30%,transparent_50%)]"
           yOffset={-270}
         />
       </div>
@@ -86,7 +86,7 @@ function CloudTestimony({ className }) {
               <p className="before:content-['“'] after:content-['”'] sm:before:absolute sm:before:right-full">
               At Cloud Zest, we understand that every business has unique requirements, and we tailor our ICT consultancy and infrastructure services to meet your specific goals. Our experienced team of professionals stays abreast of the latest technologies and best practices to deliver exceptional solutions and support.
               </p>
-              <p className="text-2xl mt-4 text-orange-600">
+              <p className="text-2xl mt-4 text-[#F82409]">
               Partner with Cloud Zest to leverage the expertise of our ICT consultancy and infrastructure services, enabling your business to thrive in the digital era.
               </p>
             </blockquote>

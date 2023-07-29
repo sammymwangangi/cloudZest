@@ -82,7 +82,7 @@ function CloudTestimony({ className }) {
               <p className="before:content-['“'] after:content-['”'] sm:before:absolute sm:before:right-full">
               By offering these comprehensive services, Cloud Zest enables businesses to leverage the full potential of cloud computing, empowering them with scalability, cost savings, security, and agility in today's competitive market.
               </p>
-              <p className="text-2xl mt-4 text-orange-600">
+              <p className="text-2xl mt-4 text-[#F82409]">
                 Partner with Cloud Zest and experience the cloud advantage today.
               </p>
             </blockquote>
@@ -131,7 +131,7 @@ export default function CloudComputing() {
             </div>
           </ScrollAnimationWrapper>
         </div>
-        <div className="bg-orange-50 py-24 sm:py-32">
+        <div className="bg-red-50 py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">

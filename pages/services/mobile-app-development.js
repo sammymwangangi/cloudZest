@@ -18,9 +18,9 @@ import Mobile from "../../public/assets/software.jpg";
 function OurValues() {
   return (
     <div className="relative mt-10 pt-24 sm:mt-32 sm:pt-32 lg:mt-4 lg:pt-20 pb-10">
-      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-[2.5rem] bg-gradient-to-b from-orange-50">
+      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-[2.5rem] bg-gradient-to-b from-red-50">
         <GridPattern
-          className="absolute inset-0 h-full w-full fill-orange-200 stroke-orange-950/5 [mask-image:linear-gradient(to_bottom_left,white_30%,transparent_50%)]"
+          className="absolute inset-0 h-full w-full fill-red-200 stroke-red-950/5 [mask-image:linear-gradient(to_bottom_left,white_30%,transparent_50%)]"
           yOffset={-270}
         />
       </div>
@@ -131,7 +131,7 @@ function CloudTestimony({ className }) {
               At Cloud Zest, we understand that every business has unique mobile app requirements, and we tailor our services to meet your specific goals and objectives. Our team of skilled developers, designers, and testers follows agile methodologies to deliver high-quality mobile apps that resonate with your target audience.
 
               </p>
-              <p className="text-2xl mt-4 text-orange-600">
+              <p className="text-2xl mt-4 text-[#F82409]">
               Partner with Cloud Zest for your mobile app development needs, and let us empower your business with innovative, user-friendly, and engaging mobile applications.
               </p>
             </blockquote>

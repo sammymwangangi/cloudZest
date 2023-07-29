@@ -156,8 +156,8 @@ export default function Example() {
               className={
                 "px-4 py-2 mx-2 inline-flex items-center gap-x-1 animation-hover relative focus:outline-none" +
                 (activeLink === "pricing"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  ? " text-[#FE0000] animation-active "
+                  : " text-black-500 hover:text-[#FE0000] ")
               }
             >
               <span>Services & Solutions</span>
@@ -184,7 +184,7 @@ export default function Example() {
                       >
                         <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                           <item.icon
-                            className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                            className="h-6 w-6 text-gray-600 group-hover:text-[#FE0000]"
                             aria-hidden="true"
                           />
                         </div>
@@ -205,8 +205,8 @@ export default function Example() {
               className={
                 "px-4 py-2 mx-2 inline-flex items-center gap-x-1 animation-hover relative focus:outline-none" +
                 (activeLink === "pricing"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  ? " text-[#FE0000] animation-active "
+                  : " text-black-500 hover:text-[#FE0000] ")
               }
             >
               <span>Products</span>
@@ -232,7 +232,7 @@ export default function Example() {
                       >
                         <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                           <item.icon
-                            className="h-6 w-6 text-gray-600 group-hover:text-orange-600"
+                            className="h-6 w-6 text-gray-600 group-hover:text-[#FE0000]"
                             aria-hidden="true"
                           />
                         </div>
@@ -278,7 +278,7 @@ export default function Example() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between mt-5">
-            <Link href="/" className="text-3xl font-medium text-orange-600">
+            <Link href="/" className="text-3xl font-medium text-[#F82409]">
               CloudZest
             </Link>
             <button
