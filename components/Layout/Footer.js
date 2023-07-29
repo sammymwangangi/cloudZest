@@ -63,7 +63,7 @@ const navigation = {
     { name: "Contact Us", href: "/contact-us" },
   ],
   legal: [
-    { name: "Privacy Terms", href: "#" },
+    { name: "Privacy Policy", href: "/privacy-policy" },
   ],
   social: [
     {
