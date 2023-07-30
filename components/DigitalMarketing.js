@@ -63,8 +63,8 @@ export default function DigitalMarketing() {
               src={DigitalMarket}
               alt="Product screenshot"
               className="w-[30rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-              width={2432}
-              height={1442}
+              width={912}
+              height={541}
             />
           </div>
         </div>
