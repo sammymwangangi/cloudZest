@@ -7,6 +7,7 @@ import {
   PhoneIcon,
 } from "@heroicons/react/24/outline";
 import emailjs from "@emailjs/browser";
+import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
 export default function ContactUs() {
   
@@ -156,7 +157,21 @@ export default function ContactUs() {
               </div>
             </div>
             {isEmailSent ? (
-              <p>Email sent successfully!</p>
+              <div className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48 rounded-md bg-green-50">
+              <div className="flex items-center justify-center">
+                <div className="flex-shrink-0">
+                  <CheckCircleIcon className="h-5 w-5 text-green-400" aria-hidden="true" />
+                </div>
+                <div className="ml-3">
+                  <h3 className="text-sm font-medium text-green-800">Email Sent Successfully!</h3>
+                  <div className="mt-2 text-sm text-green-700">
+                    <p>Thank you for contact us. We will reach out shortly.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+              
             ) : (
               <form
                 ref={form}
