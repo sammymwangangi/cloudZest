@@ -1,6 +1,6 @@
 {
-    "name": "PWA App",
-    "short_name": "App",
+    "name": "Cloud Zest",
+    "short_name": "CloudZest",
     "icons": [
         {
             "src": "/icons/android-chrome-192x192.png",
