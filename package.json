@@ -14,6 +14,7 @@
     "@fullhuman/postcss-purgecss": "^3.0.0",
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
+    "@imbios/next-pwa": "^1.1.1",
     "@supabase/auth-helpers-nextjs": "^0.7.2",
     "@supabase/supabase-js": "^2.26.0",
     "clsx": "^1.2.1",

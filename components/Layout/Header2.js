@@ -237,13 +237,13 @@ export default function Example() {
                           />
                         </div>
                         <div>
-                          <a
+                          <Link
                             href={item.href}
                             className="font-semibold text-gray-900"
                           >
                             {item.name}
                             <span className="absolute inset-0" />
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     ))}
