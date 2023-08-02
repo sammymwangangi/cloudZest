@@ -79,7 +79,7 @@ function CaseStudies() {
                   author="Debra Fiscal, CEO of FamilyFund"
                   className="mt-12"
                 >
-                  Working with Studio, we felt more like a partner than a
+                  Working with CloudZest, we felt more like a partner than a
                   customer. They really resonated with our mission to change the
                   way people convince their parents to cash out their pensions.
                 </Blockquote>
@@ -160,7 +160,7 @@ export default function Work() {
             className="mt-24 sm:mt-32 lg:mt-40"
             client={{ name: "Mail Smirk", logo: logoMailSmirk }}
         >
-            We approached <em>Studio</em> because we loved their past work. They
+            We approached <em>Cloud Zest</em> because we loved their past work. They
             delivered something remarkably similar in record time.
         </Testimonial>
 
