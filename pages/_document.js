@@ -20,10 +20,7 @@ class MyDocument extends Document {
           <meta name="description" content="Empowering your digital success" />
           <meta name="format-detection" content="telephone=254725626388" />
           <meta name="mobile-web-app-capable" content="yes" />
-          <meta
-            name="msapplication-config"
-            content="/browserconfig.xml"
-          />
+          <meta name="msapplication-config" content="/browserconfig.xml" />
           <meta name="msapplication-TileColor" content="#ff4694" />
           <meta name="msapplication-tap-highlight" content="no" />
           <meta name="theme-color" content="#F82409" />
@@ -58,11 +55,7 @@ class MyDocument extends Document {
             href="/favicon-16x16.png"
           />
           <link rel="manifest" href="/manifest.json" />
-          <link
-            rel="mask-icon"
-            href="/safari-pinned-tab.svg"
-            color="#5bbad5"
-          />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
           <link rel="shortcut icon" href="/favicon.ico" />
           <link
             rel="stylesheet"
@@ -83,7 +76,10 @@ class MyDocument extends Document {
           <meta name="twitter:creator" content="@cloud_zest" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="CloudZest" />
-          <meta property="og:description" content="Empowering your digital success" />
+          <meta
+            property="og:description"
+            content="Empowering your digital success"
+          />
           <meta property="og:site_name" content="CloudZest" />
           <meta property="og:url" content="https://cloudzest.net" />
           <meta
@@ -99,6 +95,7 @@ class MyDocument extends Document {
         <body className="bg-white">
           <Main />
           <NextScript />
+          
         </body>
       </Html>
     );
