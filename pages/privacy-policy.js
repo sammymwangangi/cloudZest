@@ -3,11 +3,15 @@ import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function PrivacyPolicy() {
   return (
     <>
-      <SeoHead title="Cloud Computing" />
+      <Head>
+        <title>Privacy Policy | Cloud Zest - Protecting Your Personal Information</title>
+        <meta name="description" content="Learn how Cloud Zest values your privacy. Our Privacy Policy outlines how we collect, use, and safeguard your data when you use our services. Your privacy is our priority." />
+      </Head>
       <Layout>
         <div className="bg-white px-6 pt-10 sm:pt-32 lg:px-8">
           <nav

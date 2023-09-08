@@ -14,6 +14,7 @@ import { Container } from "../../components/Container";
 import { FadeIn } from "../../components/FadeIn";
 import clsx from "clsx";
 import Mobile from "../../public/assets/software.jpg";
+import Head from "next/head";
 
 function OurValues() {
   return (
@@ -145,7 +146,10 @@ function CloudTestimony({ className }) {
 export default function Home() {
   return (
     <>
-      <SeoHead title="Mobile App Development" />
+      <Head>
+        <title>Unleash Innovation with Mobile App Development</title>
+        <meta name="description" content="Join the mobile revolution with Cloud Zest's expert mobile app development. From concept to deployment, create engaging experiences. Get a quote now." />
+      </Head>
       <Layout>
         <div
           className="max-w-screen-xl mt-6 lg:mt-0 px-8 xl:px-16 mx-auto"
@@ -155,7 +159,7 @@ export default function Home() {
             <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16">
               <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1 -mt-14 lg:mt-0">
                 <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-                  Mobile App Development.
+                Unleash Innovation with Mobile App Development
                 </h1>
                 <p className="text-black-500 mt-4 mb-6">
                   Tap into the Mobile Revolution Capture the ever-growing mobile

@@ -10,6 +10,7 @@ import Ict from "../components/Ict";
 import UiUx from "../components/UiUx";
 import { supabase } from "../lib/supabaseClient";
 import Link from "next/link";
+import Head from "next/head";
 
 const stats = [
   { label: "Founded", value: "2023" },
@@ -21,7 +22,10 @@ const stats = [
 export default function Home({ services }) {
   return (
     <>
-      <SeoHead title="CloudZest" />
+      <Head>
+        <title>Transform Your Business with Tech Solutions | Request a Quote</title>
+        <meta name="description" content="Supercharge growth through tech transformation. Elevate online presence & efficiency. Partner with Cloud Zest today for tailored solutions. Get a quote now!" />
+      </Head>
       <Layout>
         <Hero />
         <Computing />

@@ -13,6 +13,7 @@ import { SectionIntro } from "../../components/SectionIntro";
 import { Container } from "../../components/Container";
 import { FadeIn } from "../../components/FadeIn";
 import clsx from "clsx";
+import Head from "next/head";
 
 function OurValues() {
   return (
@@ -101,7 +102,10 @@ At Cloud Zest, we understand the importance of reliable and efficient ICT equipm
 export default function Home() {
   return (
     <>
-      <SeoHead title="ICT Equipment Supplies" />
+      <Head>
+        <title>Get Reliable and High-Quality ICT Equipment Supplies</title>
+        <meta name="description" content="Cloud Zest offers a comprehensive range of ICT equipment supplies including computers, laptops, servers, and networking devices. Partner with us for reliable solutions." />
+      </Head>
       <Layout>
         <div
           className="max-w-screen-xl mt-6 lg:mt-0 px-8 xl:px-16 mx-auto"
@@ -111,7 +115,7 @@ export default function Home() {
             <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16">
               <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1 -mt-6 lg:mt-0">
                 <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-                  ICT Equipment Supplies.
+                Get Reliable and High-Quality ICT Equipment Supplies
                 </h1>
                 <p className="text-black-500 mt-4 mb-6">
                   Powering Your Technology Infrastructure At Cloud Zest, we
