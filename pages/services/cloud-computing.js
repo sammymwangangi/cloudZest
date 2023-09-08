@@ -97,7 +97,10 @@ function CloudTestimony({ className }) {
 export default function CloudComputing() {
   return (
     <>
-      <SeoHead title="Transform Your Business with Tech Solutions | Request a Quote" />
+      <Head>
+        <title>Revolutionize Business with Cloud Computing</title>
+        <meta name="description" content="Scale, streamline & grow with Cloud Zest's cloud computing solutions. Expert services for infrastructure, migration, security & more. Request a quote now." />
+      </Head>
       <Layout>
         <div
           className="max-w-screen-xl mt-6 lg:mt-0 px-8 xl:px-16 mx-auto"
@@ -135,9 +138,9 @@ export default function CloudComputing() {
         <div className="bg-red-50 py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Experience the cloud advantage today
-              </h2>
+              <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Revolutionize Business with Cloud Computing
+              </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 As a cloud computing service provider, Cloud Zest offers a
                 comprehensive range of services tailored to meet the specific
