@@ -4,10 +4,10 @@ import { useRouter } from "next/router";
 
 // Default value for some meta data
 const defaultMeta = {
-  title: 'CloudZest',
+  title: 'Transform Your Business with Tech Solutions | Request a Quote',
   siteName: 'CloudZest',
-  description:
-    'Empowering Your Digital Success',
+  // description:
+    // 'Supercharge growth through tech transformation. Elevate online presence & efficiency. Partner with Cloud Zest today for tailored solutions. Get a quote now!',
   // change base url of your web (without '/' at the end)
   url: 'https://cloudzest.net',
   type: 'website',
@@ -47,7 +47,6 @@ const SeoHead = (props) => {
   meta.title = props.templateTitle
     ? `${props.templateTitle} | ${meta.siteName}`
     : meta.title;
-
   return (
     <Head>
       <title>{meta.title}</title>
@@ -115,6 +114,7 @@ const favicons = [
     sizes: '72x72',
     href: '/apple-icon-72x72.png',
   },
+  
   {
     rel: 'apple-touch-icon',
     sizes: '76x76',

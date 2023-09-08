@@ -6,11 +6,15 @@ import AboutUs from "../components/About";
 import Values from "../components/Values";
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function About() {
   return (
     <>
-      <SeoHead title="Cloud Computing" />
+      <Head>
+        <title>Empowering Business Growth with Tech Solutions</title>
+        <meta name="description" content="Unlock growth, efficiency & success with Cloud Zest. Your trusted tech partner for innovative solutions. Request a quote for your business needs." />
+      </Head>
       <Layout>
         <div className="bg-white px-6 pt-10 sm:pt-32 lg:px-8">
           <nav
@@ -39,9 +43,9 @@ export default function About() {
             </ol>
           </nav>
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              About CloudZest
-            </h2>
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              Empowering Business Growth with Tech Solutions
+            </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               We empower businesses like yours with cutting-edge solutions for
               growth, efficiency, and success.

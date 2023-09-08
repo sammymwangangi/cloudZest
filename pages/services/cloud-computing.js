@@ -14,6 +14,7 @@ import { Container } from "../../components/Container";
 import { FadeIn } from "../../components/FadeIn";
 // import CloudTestimony from "../../components/CloudTestimony";
 import clsx from "clsx";
+import Head from "next/head";
 
 const features = [
   {
@@ -96,7 +97,7 @@ function CloudTestimony({ className }) {
 export default function CloudComputing() {
   return (
     <>
-      <SeoHead title="Cloud Computing" />
+      <SeoHead title="Transform Your Business with Tech Solutions | Request a Quote" />
       <Layout>
         <div
           className="max-w-screen-xl mt-6 lg:mt-0 px-8 xl:px-16 mx-auto"

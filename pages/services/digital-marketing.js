@@ -14,6 +14,7 @@ import { SectionIntro } from "../../components/SectionIntro";
 import { Container } from "../../components/Container";
 import { FadeIn } from "../../components/FadeIn";
 import DigitalMarket from "../../public/assets/digital-marketing.svg";
+import Head from "next/head";
 
 function OurValues() {
   return (
@@ -149,7 +150,10 @@ function CloudTestimony({ className }) {
 export default function DigitalMarketing() {
   return (
     <>
-      <SeoHead title="Digital Marketing" />
+      <Head>
+        <title>Boost Your Brand with Digital Marketing</title>
+        <meta name="description" content="Unlock online success with Cloud Zest's tailored digital marketing solutions. From SEO to social media, drive traffic and conversions. Get a quote now." />
+      </Head>
       <Layout>
         <div
           className="max-w-screen-xl mt-6 lg:mt-0 px-8 xl:px-16 mx-auto pt-16"
@@ -159,7 +163,7 @@ export default function DigitalMarketing() {
             <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16">
               <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1 -mt-24 lg:mt-0">
                 <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-                  Digital Marketing.
+                  Boost Your Brand with Digital Marketing
                 </h1>
                 <p className="text-black-500 mt-4 mb-6">
                   Accelerate Your Online Presence Stand out in the digital

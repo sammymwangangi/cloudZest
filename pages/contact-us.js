@@ -8,10 +8,11 @@ import {
 } from "@heroicons/react/24/outline";
 import emailjs from "@emailjs/browser";
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
+import Head from "next/head";
 
 export default function ContactUs() {
   
-    const form = useRef();
+  const form = useRef();
   const [isEmailSent, setIsEmailSent] = useState(false);
   const [formData, setFormData] = useState({
     first_name: "",
@@ -58,7 +59,10 @@ export default function ContactUs() {
   };
   return (
     <>
-      <SeoHead title="Contact Us" />
+      <Head>
+        <title>Contact Cloud Zest | Reach Out for Inquiries and Collaboration</title>
+        <meta name="description" content="Get in touch with Cloud Zest for inquiries, collaboration, and technology solutions. Contact us via email or phone. We're here to assist you on your digital journey." />
+      </Head>
       <Layout>
         <div className="relative isolate bg-white">
           <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">

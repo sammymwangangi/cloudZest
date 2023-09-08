@@ -19,7 +19,7 @@ export default function Hero() {
             variants={scrollAnimation}>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1 -mt-14 lg:mt-0">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-              Your One-Stop Solution for Cutting-Edge Technology Services
+              Transform Your Business with Tech Solutions
               </h1>
               <p className="text-black-500 mt-4 mb-6">
               Partner with us to accelerate your digital transformation, enhance your online presence, and unlock the full potential of technology for your business. Let us be your trusted partner on the path to success.

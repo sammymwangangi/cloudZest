@@ -19,6 +19,7 @@ import logoNorthAdventures from "../public/assets/clients/north-adventures/logo-
 import logoPhobia from "../public/assets/clients/phobia/logo-dark.svg";
 import clientLogo from "../public/assets/logo-light.svg";
 import logoUnseal from "../public/assets/clients/unseal/logo-dark.svg";
+import Head from "next/head";
 
 function CaseStudies() {
   return (
@@ -132,16 +133,13 @@ function Clients() {
   );
 }
 
-export const metadata = {
-  title: "Our Work",
-  description:
-    "We believe in efficiency and maximizing our resources to provide the best value to our clients.",
-};
-
 export default function Work() {
   return (
     <>
-      <SeoHead title="Case Studies" />
+      <Head>
+        <title>Insights & Case Studies | Cloud Zest - Stay Informed and Inspired</title>
+        <meta name="description" content="Explore our insightful blogs and case studies at Cloud Zest. Discover innovative solutions, success stories, and industry trends. Stay informed and inspired." />
+      </Head>
       <Layout>
         <PageIntro
             eyebrow="Our work"
