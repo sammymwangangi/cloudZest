@@ -319,9 +319,9 @@ export default function MobileApp() {
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
-            <h1 className="text-4xl font-medium tracking-tight text-gray-900">
+            <h2 className="text-4xl font-medium tracking-tight text-gray-900">
               Mobile App Development.
-            </h1>
+            </h2>
             <p className="mt-6 text-lg text-gray-600">
             Tap into the Mobile Revolution Capture the ever-growing mobile market with our cutting-edge mobile app development services.
             </p>
